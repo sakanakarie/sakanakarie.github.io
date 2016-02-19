@@ -1,183 +1,30 @@
-@charset "UTF-8";
-/* CSS Document */
-body{
-	color:#4a4a4a;
-	font-family:'メイリオ',"ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-size:0.875em;
-	line-height:1.9em;
-	letter-spacing:0.1em;
-}
-a{
-	color:#000;
+@charset:"utf-8";
+
+.jumbotron {
+  background-image: url("../images/ba01.jpg");
+  padding: 200px 0 100px 0;
+  background-position: center center;
+  background-size: cover;
+  color: #000;
 }
 
-img{
-	max-width:100%
+.row{
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
 }
 
-.wrap{
-	width:90%;
-	max-width:960px;
-	margin:0 auto;
-}
-
-.clearfix{
-	content:'';
-	clear:both;
-	display:table;
-}
-#mainimg{
-	position:fixed;
-	top:65px;
-	left:0;
-	background:url(../images/work2.jpg) no-repeat;
-	background-size: contain;
-	width:100%;
-	padding-top:100%;
-	z-index:0;
-}
-header{
-	padding:5px 0;
-	background-color:#eee;
-	border-bottom:1px solid #f7f7f7;
-	position:fixed;
-	top:0;
-	width:100%;
-	z-index:12;
-}
-
-nav ul{
-	padding:20px 0 10px;
-}
-nav li{
-	display:inline;
-	margin-right:30px;
-}
-nav li:last-child{
-	margin-right:0;
-}
-nav a{
-	color:#000;
-	text-decoration:none;
-}
-nav a:hover{
-	color:#adadad;
-}
-.main{
-	position:relative;
-	padding-top:960px;
-}
-.bg{
-	position:absolute;
-	width:100%;
-	background-color:#fff;
-	opacity:0.85;
-	z-index:0;
-
-}
-.contents{
-	position:absolute;
-	width:100%;
-	overflow:hidden;
-	z-index:10;
-}
-section{
-	z-index:8;
-}
-.cont-detail{
-	width:100%;
-	padding:190px 0;
-	height:230px;
-}
-
-.cont-detail h3{
-	margin bottom: 10px;
-}
-.cont-detail h2{
-	float:left;
-	height:100%;
-	width:50%;
-	text-align:center;
-}
-
-footer{
-	width:100%;
-	position:absolute;
-	z-index:10;
-}
-
-footer small{
-	display:block;
-	padding:15px 0;
-	width:100%;
-	color:#fff;
-	text-align:center;
-	background-color:#3b3b3b;
-}
-.bg{
-	height:2410px;
-}
-
-footer{
-	margin-top:2410px;
-}
-
-/*mediaルール*/
-@media screen and (max-width: 568px){
-
-header:after{
-	display:none;
-}
-
-.wrap{
-	width:100%;
-	max-width:960px;
-	margin:0 auto;
-}
-
-#mainimg{
-	background:url(../images/work.jpg) no-repeat ;
-	background-size: contain;
-}
-
-.main{
-	padding-top:90%;
-}
-
-nav{
-	width:80%;
-	margin:0 auto;
-}
-
-nav ul{
-	text-align:center;
-}
-nav li{
-	margin-right:5px;
-}
-
-.cont-detail h2{
-	float:none !important;
-	width:100%;
-	text-align:center;
-	margin-bottom:20px;
-	padding:0 !important;
-	height:auto;
-}
-.cont-detail h2 img{
-	max-width:90%;
-}
-.cont-detail p{
-	width:80%;
-	margin:0 auto;
-	text-align:left;
-}
-
-.bg{
-	height:2440px;
+.col-lg-4{
+  margin:20px 10px 20px 10px;
+  float: left;
 }
 footer{
-	margin-top:2440px;
-	font-size: 5px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
+
+#pagetop {
+ float: right;
+ margin-right: 30px;
 }

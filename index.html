@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>Web Designer Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/jquery-1.12.0.min.js"></script>
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/script.js"></script>
-<!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-		<script src="js/html5shiv-printshiv.min.js"></script>
-        <script src="js/respond.js"></script>
-<![endif]-->
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>belly button bagle/ベリーボタンベーグル</title>
 
-<body>
-<div id="mainimg">
-</div><!--mainimg END-->
-<header>
-    <div class="wrap">
-        <nav>
-            <ul>
-                <li><a href="#">TOP</a></li>
-                <li><a href="#profile">PROFIlE</a></li>
-                <li><a href="#skill">SKILL</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body role="document">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">belly button bagel</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#sozai">素材について</a></li>
+              <li><a href="#hozon">保存方法</a></li>
+              <li><a href="#healthy">healthy</a></li>
+              <li class="divider"></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">特定商取引法</a></li>
             </ul>
-        </nav><!--nav END-->
-    </div><!--wrap END-->
-</header><!--header END-->
-<div class="main">
-    	<section class="contents">
-        	<div class="wrap">
-                <section id="profile" class="cont-detail clearfix">
-                    <h2><img src="images/prof.png" alt="profile"></h2>
-                    <p>坂中 理恵（さかなか りえ）<br>
-                    <p>Fukuoka,Japan</p>
-                    <p>販売、営業、営業事務を経験後、Webの世界に興味をもち、2015年12月よりHTML・CSSの勉強を始める。</p>
-                    <p>まだ、はじめて３ヶ月。<br>
-                    ひよこどころか卵の殻を破れたかな？くらいですが、コーディング技術を身に付け、webデザインの仕事をやっていきたい。</p>
-                </section><!--profile END-->
-                <section id="skill" class="cont-detail clearfix">
-                    <h2><img src="images/skill.png" alt="skill"></h2>
-                    <p>Word・Excel</p>
-                    <p>PowerPoint（基礎程度）</p><br>
-                    <p>HTML・CSS・JavaScript・Query..<br>
-                    <p>photoshop</p>
-                    <p>...ただいま勉強中です!</p><br>
-                     <p>MacBookAir使用</p>
-                </section><!--skill END-->
-                <section id="portfolio" class="cont-detail clearfix">
-                    <h2><img src="images/port.png" alt="portfolio"></h2>
-                     <p>bagle専門店をテーマにしたサイトの作成をしました。bagleのおいしさや魅力を知って頂いて、食べてみたい！と思ってもらえるようなサイト作りを心掛けました。</p><p>web作成の一通りの過程を体験しました。</p>
-                     <p><a href="#">サイトを見る</a></p>
-                     <p>制作期間：2016.01−02<br>使用技術：HTML・CSS</p>
-                </section><!--portfolio END-->
-                <section id="contact" class="cont-detail clearfix">
-                    <h2><img src="images/cotact.png" alt="contast"></h2>
-                    <p>bellybutton0412@gmail.com までご連絡ください。</p>
-                </section><!--contact END-->
-             </div><!--wrap END-->
-         </section><!--contents END-->
-    <div class="bg">
-    </div><!--bg END-->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>bagel is yummy!</h1>
+      <p>us surely give a nice time...</p>
+      <p><a class="btn btn-primary btn-lg" role="button">About Bagel &raquo;</a></p>
+    </div>
+  </div>
+
+<div class="row">
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/bakery.jpg" alt="パン屋さん" style="width:260px; height: 200px;">
+          <h3>News</h3>
+          <p>2016.03.01 サイトをopenしました！</p>
+          <p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/bagelmenu.png" alt="bagelsメニュー" style="width:260px; height: 200px;">
+          <h3>Menu</h3>
+          <p>menu一覧</p>
+          <p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/komugi.jpg" alt="小麦粉" style="width:260px; height: 200px;">
+          <h3>About bagel</h3>
+          <p>国産小麦粉・天然水・塩・麦芽のみを使用しております。</p><p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/coffee-bagel.jpg" alt="coffeeとbagel" style="width:260px; height: 200px;">
+          <h3>How to</h3>
+          <p class="box">保存方法とお召上がり方をお伝えします！</p><p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+         <div class="col-lg-4">
+          <img class="img-rounded" src="images/healthy.jpg" alt="健康的な体" style="width:260px; height: 200px;">
+          <h3>Healthy</h3>
+          <p class="box">ベーグルって健康的なんです！</p><p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-rounded" src="images/phone.jpg" alt="お問い合わせ" style="width:260px; height: 200px;">
+          <h3>Contact</h3>
+          <p>お問い合わせはこちらから</p><p><a class="btn btn-default" href="#" role="button">もっと見る &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
     <footer>
-        <small>copyright &copy; sakanakarie All rights reserved.</small>
-    </footer><!--footer END-->
-</div><!--main END-->
-</body>
+      <p>&copy; bellybuttonbagle 2016</p>
+    </footer>
+<p id="pagetop"><a href="#top">pagetop</a></p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
