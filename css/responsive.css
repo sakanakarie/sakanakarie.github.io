@@ -1,0 +1,59 @@
+/*mediaルール 
+screen and (max-width: 568px)*/
+@charset "utf-8"
+
+header:after{
+  display:none;
+}
+
+.wrap{
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+}
+
+#mainimg{
+  background:url(../images/work.jpg) no-repeat ;
+  background-size: contain;
+}
+
+.main{
+  padding-top:90%;
+}
+
+nav{
+  width:80%;
+  margin:0 auto;
+}
+
+nav ul{
+  text-align:center;
+}
+nav li{
+  margin-right:5px;
+}
+
+.cont-detail h2{
+  float:none !important;
+  width:100%;
+  text-align:center;
+  margin-bottom:20px;
+  padding:0 !important;
+  height:auto;
+}
+.cont-detail h2 img{
+  max-width:90%;
+}
+.cont-detail p{
+  width:80%;
+  margin:0 auto;
+  text-align:left;
+}
+
+.bg{
+  height:3200px;
+}
+footer{
+  margin-top:3200px;
+  font-size: 5px;
+}
