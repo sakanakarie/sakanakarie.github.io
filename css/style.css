@@ -7,6 +7,7 @@ body{
 	line-height:1.9em;
 	letter-spacing:0.1em;
 }
+
 a{
 	color:#000;
 }
@@ -39,29 +40,33 @@ img{
 }
 
 header{
-	padding:5px 0;
-	background-color:#eee;
-	border-bottom:1px solid #f7f7f7;
 	position:fixed;
 	top:0;
 	width:100%;
 	z-index:12;
+	padding:5px 0;
+	background-color:#eee;
+	border-bottom:1px solid #f7f7f7;
 }
 
 nav ul{
 	padding:20px 0 10px;
 }
+
 nav li{
 	display:inline;
 	margin-right:30px;
 }
+
 nav li:last-child{
 	margin-right:0;
 }
+
 nav a{
 	color:#000;
 	text-decoration:none;
 }
+
 nav a:hover{
 	color:#adadad;
 }
@@ -70,6 +75,7 @@ nav a:hover{
 	position:relative;
 	padding-top:960px;
 }
+
 .bg{
 	position:absolute;
 	width:100%;
@@ -89,9 +95,26 @@ section{
 	z-index:8;
 }
 
-#portfolio h2{
-	float: left;
+.cont-detail{
+	width:100%;
+	padding:190px 0;
+	height:230px;
 }
+
+.cont-detail h2{
+	float:left;
+	height:100%;
+	width:50%;
+	text-align:center;
+}
+
+.cont-detail h2 img{
+	margin:auto 0;
+	}
+
+/*.cont-detail h3{
+	margin bottom: 10px;
+}*/
 
 .port_text{
 	overflow: hidden;
@@ -102,22 +125,6 @@ section{
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.cont-detail{
-	width:100%;
-	padding:190px 0;
-	height:230px;
-}
-
-.cont-detail h3{
-	margin bottom: 10px;
-}
-.cont-detail h2{
-	float:left;
-	height:100%;
-	width:50%;
-	text-align:center;
 }
 
 footer{
