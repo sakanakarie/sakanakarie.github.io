@@ -1,214 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>belly button bagle/ベリーボタンベーグル</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" >
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <script src="js/ie-emulation-modes-warning.js"></script>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>sakanakarie portfolio</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css" media="screen and (max-width:568px)">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/script.js"></script>
+</head>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<body>
+<div id="mainimg">
+</div><!--mainimg END-->
 
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">belly button bagle</a>
-            </div><!--navbar-headerEnd-->
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="menu.html">Menu</a>
-                <li><a href="howto.html">How to</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other<span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#ourgagels">Our Bagels</a></li>
-                    <li><a href="#recipe">Recipe</a></li>
-                    <li><a href="#healthy">Healthy</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header"></li>
-                    <li><a href="access.html">Access</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul><!--dropdown-menuEnd-->
-                </li><!--dropdownEnd-->
-              </ul><!--nav navbar-nav-->
-            </div><!--navbar-collapseEnd-->
-          </div><!--containerEnd-->
-        </nav><!--navbarEnd-->
-      </div><!--containerEnd-->
-    </div><!--navbar-wrapperEnd-->
+<header>
+    <div class="wrap">
+        <nav>
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#profile">PROFIlE</a></li>
+                <li><a href="#skill">SKILL</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav><!--nav END-->
+    </div><!--wrap END-->
+</header><!--header END-->
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+<div class="main">
+    <section class="contents">
+        <div class="wrap">
+            <section id="profile" class="cont-detail clearfix">
+                <h2><img src="images/prof.png" alt="profile"></h2>
+                <p>坂中 理恵（さかなか りえ）<br>
+                <p>Fukuoka,Japan</p>
+                <p>販売、営業、営業事務を経験後、Webの世界に興味をもち、2015年12月よりHTML・CSSの勉強を始める。</p>
+                <p>まだ、はじめて３ヶ月。<br>
+                ひよこどころか卵の殻を破れたかな？くらいですが、コーディング技術を身に付け、webデザインの仕事をやっていきたい。</p>
+            </section><!--profile END-->
 
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="images/top01.png" alt="bagleの写真">
-          <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="images/ba02.jpg" alt="bagelサンドの写真">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Bagel is yummy!</h1>
-              <p>作る過程で「茹でる」ので、どっしりと重くモチモチとした食感が生まれます。<br>進化したオリジナルbagel...是非お楽しみください。</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="images/bagelbasket.jpg" alt="bagleの写真">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>bagel's history...</h1>
-              <p>bagelには約300年の歴史があります。17世紀の終わりにオーストリアのユダヤ人のパン職人が、ポーランドの王様に献上するに作ったパンが「bagel」と言われています。</p>
-            </div>
-          </div>
-        </div>
-      </div><!--carousel-innerEnd-->
+            <section id="skill" class="cont-detail clearfix">
+                <h2><img src="images/skill.png" alt="skill"></h2>
+                <p>Word・Excel</p>
+                <p>PowerPoint（基礎程度）</p><br>
+                <p>HTML・CSS・JavaScript・Query..<br>
+                <p>photoshop</p>
+                <p>...ただいま勉強中です!</p><br>
+                <p>MacBookAir使用</p>
+            </section><!--skill END-->
 
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+            <section id="portfolio" class="cont-detail clearfix">
+                <h2><img src="images/port.png" alt="portfolio"></h2>
+                <div class="port_text">
+                <span >
+                <p>授業で結婚式場の紹介サイトを作成しました。<br>
+                デザインの基礎知識を学びました。<br>
+                <a href="http://sakanakarie.github.io/wedding">→サイトへ</a></p>
+                <p>制作期間：2015.12<br>使用技術：HTML・CSS</p>
+                </span>
+            <hr class="hr_style">
+                <span>
+                <p>bagle専門店をテーマにしたサイトを作成しました。<br>
+                bagleのおいしさや魅力を知って頂いて、食べたい！と思ってもらえるようなサイト作りを心掛けました。<br>
+                web作成の一通りの過程を体験しました。<br>
+                <a href="http://sakanakarie.github.io/bagel.boot">→サイトへ</a></p>
+                <p>制作期間：2016.01−02<br>使用技術：HTML・CSS</p>
+                </span>
+            <hr class="hr_style">
+                <span>
+                <p>病院とをテーマにしたサイトを作成しました。<br>
+                ワンカラムワンページで見やすくなっています。<br>
+                <a href="http://sakanakarie.github.io/hospital">→サイトへ</a></p>
+                <p>制作期間：2016.02<br>使用技術：HTML・CSS・jquery</p>
+                </span>
+                </div>
+            </section><!--portfolio END-->
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+            <section id="contact" class="cont-detail clearfix">
+                <h2><img src="images/cotact.png" alt="contast"></h2>
+                <p>bellybutton0412@gmail.com までご連絡ください。</p>
+            </section><!--contact END-->
 
-  <div class="container marketing">
+        </div><!--wrap END-->
+    </section><!--contents END-->
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/newspapers.jpg" alt="新聞の写真" style="width: 150px; height: 150px;">
-          <h2>News</h2>
-          <p>最新情報をお届け</p>
-          <p><a class="btn btn-default" href="news.html" role="button">click &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/bakery.jpg" alt="捏ねる写真" style="width: 150px; height: 150px;">
-          <h2>Menu</h2>
-          <p>メニュ 一覧</p>
-          <p><a class="btn btn-default" href="menu.html" role="button">click &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/eat.jpg" alt="食べ方" style="width: 150px; height: 150px;">
-          <h2>How to</h2>
-          <p>おいしいお召上がり方をご紹介</p>
-          <p><a class="btn btn-default" href="howto.html" role="button">click &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+    <div class="bg">
+    </div><!--bg END-->
 
-      <!-- START THE FEATURETTES -->
+    <footer>
+        <small>copyright &copy; sakanakarie All rights reserved.</small>
+    </footer><!--footer END-->
 
-     <hr class="featurette-divider">
-
-    <div id="ourgagels">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><small>Our Bagels</small></h2>
-          <p class="lead">国産小麦粉・天然酵母・天然塩・麦芽・水が原料です。</p>
-          <p class="lead-more">バター・卵・砂糖は使用しておりません。<br>
-          天然酵母を使用し、低温長時間発酵でじっくりじっくり時間をかけて丁寧に作りました。<br>味は麦芽のやさしい甘さ、そして天然酵母の深い味わいがあります。<br></p>
-        </div><!--col-md-7End-->
-
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/komugi.jpg" alt="捏ねたbagel">
-        </div><!--col-md-5End-->
-      </div><!--row featuretteEnd-->
-    </div><!--ourgagelsEnd-->
-
-      <hr class="featurette-divider">
-
-    <div id="recipe">
-        <div class="row featurette">
-          <div class="col-md-7 col-md-push-5">
-            <h2 class="featurette-heading"> <small>Recipe</small></h2>
-            <p class="lead">bagel sandで野菜もとろう！</p>
-            <p class="lead-more">そのまま食べてもbagelはおいしいけれど、サンドにすることで野菜やタンパク質等の栄養を手軽にプラスすることができます。</p>
-            <div class="maiking">
-            <p>&nbsp;&nbsp;シーザーサラダベーグルの作り方</p>
-            <p>【材料】  チキン、パルメザンチーズ、玉ねぎ、シーザーソース、レタス</p>
-            <p>【作り方】</p>
-            <p>&nbsp;&nbsp;&nbsp;ベーグルを半分にスライスし、材料を一緒にサンドする。<br>&nbsp;&nbsp;&nbsp;お好みで軽くトーストしてもおいしくお召し上がりいただけます！</p>
-            </div><!--maiking-->
-          </div><!--col-md-7 col-md-push-5End-->
-          <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive" src="images/ba-sand02.jpg" width="500px" height="500px" alt="bagelサンドの写真" >
-          </div><!--col-md-5 col-md-pull-7End-->
-        </div><!--row featuretteEnd-->
-    </div><!--recipeEnd-->
-
-      <hr class="featurette-divider">
-
-    <div id="healthy">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><small>Healthy</small></h2>
-          <p class="lead">ローカロリー・ノーファット</p><p class="lead-more">乳・バターなどのタンパク質、及び脂質を一切使用しておりません。<br>健康志向の方へも最適なヘルシーパンです。<br>また噛み応えがあるため、育ち盛りのお子様の顎の発達にも良いですし、よく噛むことで満腹感が得られるため、ダイエットにもオススメです。</p>
-        </div><!--col-md-7End-->
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="images/healthy.jpg" alt="おなかの写真">
-        </div><!--col-md-5End-->
-      </div><!--row featuretteEnd-->
-    </div><!--healthyEnd-->
-
-      <hr class="featurette-divider">
-
-    <!-- /END THE FEATURETTES -->
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 bellybuttonbagel &middot; <a href="#">プライバシーポリシー</a> &middot; <a href="#">お問い合わせ</a></p>
-      </footer>
-    </div><!--container marketingEnd-->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="assets/js/docs.min.js"></script>
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-
-  </body>
+</div><!--main END-->
+</body>
 </html>
