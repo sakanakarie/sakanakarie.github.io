@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background:url(../img/backimage/back_blue_bottom.jpg) repeat;
+  font-size:14px;
+  color:#222;
+  font-family: Helvetica, Arial,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height:24px;
+  text-align:left;
+  min-width:1000px;
+  height:3500px;}
+a {
+  color:#222;
+  text-decoration:underline;
+  font-weight:normal;}
+  
+/* layout ----------------------------------------------------------------------------------------------- */
+header {
+  z-index:99;
+  width:auto;
+  height:400px;
+  margin-right:100px;}
+nav {
+  z-index:99;
+  width:125px;
+  height:100%;
+  position:fixed;
+  right:15px;
+  top:0;
+  background:#111;
+  /* For WebKit (Safari, Google Chrome etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#111), to(#1b1b1b));
+    /* For Mozilla/Gecko (Firefox etc) */
+    background: -moz-linear-gradient(top, #111, #1b1b1b);
+    /* For Internet Explorer 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#111111, endColorstr=#1b1b1b)";
+  border-left:#555 1px solid;
+  border-right:#555 1px solid;}
+div#navigation {
+  border-right:#000 1px solid;
+  border-left:#000 1px solid;}
+div#content > section {
+  z-index:99;
+  display:block;
+  width:800px;
+  margin:0 auto;
+  position:relative;
+  right:80px;
+  margin-bottom:100px;}
+  
+
+/* background ----------------------------------- */  
+div#backImage {
+  position:relative;
+  z-index:2;
+  background:url(../img/backimage/back_blue_top.jpg) top repeat-x;}
+div#backImageAnimal{
+  position:relative;
+  z-index:3;
+  background:url(../img/backimage/back_img1.png) top center no-repeat;}
+div#backImageBirds {
+  z-index:3;
+  position:absolute;
+  left:-200px;
+  top:-100px;
+  width:303px;
+  height:208px;
+  background:url(../img/backimage/back_img3.png) no-repeat;}
+div#backImageKumo {
+  position:absolute;
+  top:800px;
+  left:40%;
+  width:642px;
+  height:235px;
+  background:url(../img/backimage/back_img2.png) no-repeat;}
+#backFooter {
+  position:inherit;
+  height:3500px;
+  width:100%;
+  background:url(../img/backimage/bottom.png) right bottom no-repeat;
+  z-index:80;}  
+#backFooterLeft {
+  position:relative;
+  height:3500px;
+  width:100%;
+  background:url(../img/backimage/bottom_left.png) left bottom repeat-x;
+  z-index:1;}
+  
+  
+/* header----------------------------------------------------------------------------------------------- */
+header h1 a  {
+  display:block;
+  width:231px;
+  height:96px;
+  overflow:hidden;
+  margin:0 auto;
+  position:relative;
+  top:180px;}
+  
+  
+/* nav ----------------------------------------------------------------------------------------------- */
+nav p img {
+  position:relative;
+  top:60px;
+  display:block;
+  margin:0 auto;}
+nav ul {
+  position:fixed;
+  bottom:20px;
+  margin-left:10px;}
+nav li {
+  margin-bottom:10px;}
+  
+  
+/* prof ----------------------------------------------------------------------------------------------- */
+section h2 {
+  margin-bottom:5px;}
+#profile img.prof_image {
+  float:left;
+  overflow:hidden;
+  margin:0 25px 0 0;}
+#profile div.profArea {
+  display:block;
+  width:510px;
+  overflow:hidden;}
+#profile .profArea table tr th{
+  float:left;
+  display:block;
+  width:100px;
+  height:auto;
+  font-weight:normal;}
+#profile .profArea table tr td{
+  width:400px;
+  display:block;
+  overflow:hidden;
+  margin-bottom:6px;
+  }
+#profile .profArea p{
+  margin-top:20px;}
+#profile .toLink img {
+  position:relative;
+  top:-300px;
+  left:480px;}
+#profile .toLink a.toMail {
+  margin-right:20px;}
+  
+
+
+/* port ----------------------------------------------------------------------------------------------- */
+section#portfolio {
+  position:relative;
+  top:-100px;}
+section h3 {
+  margin-bottom:3px;}
+#portfolio h3 {
+  font-weight:bold;}
+#portfolio .col {
+  width:230px;
+  height:430px;
+  margin:15px;
+  float:left;}
+#portfolio .line-height {
+  float:left;
+  width:2px;
+  height:460px;
+  background:url(../img/line_height.png) repeat-y;}
+#portfolio .line-width {
+  float:left;
+  width:770px;
+  height:1px;
+  background:url(../img/line_width.png) repeat-x;}
+#portfolio .col p.port-date {
+  font-size:12px;
+  margin-top:1em;
+  line-height:18px;}
+#portfolio .col p.red a{
+  text-decoration:none;
+  font-weight:bold;
+  color:#A00;}
+#portfolio .col p.red a:hover {
+  text-decoration:underline;}
+  
+/* link ----------------------------------------------------------------------------------------------- */  
+section#link {
+  clear:both;}
+#link .col {
+  width:240px;
+  height:80px;
+  margin:10px;
+  float:left;
+  font-size:12px;
+  line-height:20px;}
+#link p.text {
+  margin-bottom:20px;}
+#link .line-height {
+  float:left;
+  width:2px;
+  height:100px;
+  background:url(../img/line_height.png) repeat-y;}
+#link .line-width {
+  float:left;
+  width:770px;
+  height:1px;
+  background:url(../img/line_width.png) repeat-x;}
+  
+  
+/* mail ----------------------------------------------------------------------------------------------- */  
+section#mail {
+  clear:both;
+  position:relative;
+  top:80px;}
+#mail p.text {
+  margin-bottom:10px;}
+  
+  
+/* footer ----------------------------------------------------------------------------------------------- */  
+footer {
+  width:100%;
+  height:35px;
+  z-index:99;
+  position:absolute;
+  bottom:0;
+  left:auto;}
+footer p.copyright {
+  width:300px;
+  color:#FFF;
+  display:block;
+  margin: 0 auto;}
+div#backFooterKirin {
+  position:absolute;
+  bottom:40px;
+  right:20%;
+  width:161px;
+  height:325px;
+  background:url(../img/backimage/back_kirin.png) no-repeat;}
